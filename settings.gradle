@@ -1,0 +1,10 @@
+
+pluginManagement {
+    repositories {
+        maven {
+            url 'https://nexus-dev.danal.co.kr/repository/gradle-group'
+        }
+    }
+}
+
+rootProject.name = 'test'
