@@ -22,10 +22,15 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'    // JPA (DB)
 	implementation 'com.microsoft.sqlserver:mssql-jdbc'                       // MSSQL JDBC 드라이버
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'   // 필요하면 (템플릿용)
-	implementation 'org.apache.poi:poi-ooxml:5.2.3'
+	//implementation 'org.apache.poi:poi-ooxml:5.2.3' // XLSX
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.apache.commons:commons-csv:1.10.0' //CSV 파싱
 	implementation 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5'
+	//implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.4'
 }
 
 tasks.named('test') {

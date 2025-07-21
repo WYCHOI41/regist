@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>엑셀 업로드</title>
+  <meta charset="UTF-8" />
+  <title>TXT 파일 업로드</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -49,12 +49,11 @@
 </head>
 <body>
 <div class="container">
-  <h2>엑셀 파일 업로드</h2>
+  <h2>TXT 파일 업로드</h2>
   <form th:action="@{/upload}" method="post" enctype="multipart/form-data">
-    <input type="file" name="file" accept=".xlsx,.xls" required />
+    <input type="file" name="file" accept=".csv" required />
     <button type="submit">업로드</button>
   </form>
-
   <div th:if="${message}" class="msg" th:text="${message}"></div>
 </div>
 </body>
